@@ -190,5 +190,13 @@
   transform: scaleX(-1) !important;
 }
 
+/* ::::: PanelUI Toolbarbutton ::::: */
+
+#nav-bar #ctraddon_panelui-button > #PanelUI-menu-button {
+  /* His CSS sets margin-top and -bottom to zero, so we reassert our margins. */
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+
 
 
