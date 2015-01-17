@@ -148,5 +148,47 @@
   transform: scaleX(-1) !important;
 }
 
+/* ::::: CTR-Defined Stop Toolbarbutton ::::: */
+
+#ctraddon_stop-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
+  -moz-image-region: rect(0, 96px, 16px, 80px) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#ctraddon_stop-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(16px, 96px, 32px, 80px) !important;
+}
+
+#main-window:not([customizing]) #ctraddon_stop-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(32px, 96px, 48px, 80px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button > .toolbarbutton-icon,
+#customization-panelHolder #ctraddon_stop-button > .toolbarbutton-icon,
+#customization-palette #ctraddon_stop-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
+  -moz-image-region: rect(0, 144px, 24px, 120px) !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(24px, 144px, 48px, 120px) !important;
+}
+#main-window:not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon {
+  -moz-image-region: rect(48px, 144px, 72px, 120px) !important;
+}
+
+#ctraddon_stop-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+  transform: scaleX(-1) !important;
+}
+
 
 
