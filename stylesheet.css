@@ -106,3 +106,47 @@
   background-image: -moz-image-rect(url(chrome://browser/skin/Toolbar-australis.png), 0, 96, 24, 48) !important;
 }
 
+/* ::::: CTR-Defined Reload Toolbarbutton ::::: */
+
+#ctraddon_reload-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
+  -moz-image-region: rect(0, 80px, 16px, 64px) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#ctraddon_reload-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(16px, 80px, 32px, 64px) !important;
+}
+
+#main-window:not([customizing]) #ctraddon_reload-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(32px, 80px, 48px, 64px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button > .toolbarbutton-icon,
+#customization-panelHolder #ctraddon_reload-button > .toolbarbutton-icon,
+#customization-palette #ctraddon_reload-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
+  -moz-image-region: rect(0, 120px, 24px, 96px) !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(24px, 120px, 48px, 96px) !important;
+}
+#main-window:not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon {
+  -moz-image-region: rect(48px, 120px, 72px, 96px) !important;
+}
+
+#ctraddon_reload-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+  transform: scaleX(-1) !important;
+}
+
+
+
