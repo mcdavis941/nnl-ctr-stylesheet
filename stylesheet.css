@@ -198,5 +198,24 @@
   margin-bottom: 5px !important;
 }
 
+/* ::::: CTR Options Toolbarbutton ::::: */
+
+#ctraddon_ctr-button > .toolbarbutton-icon {
+  /* His icon size is 18x18, and we have no replacement icon for this, so we need to rescale his. */
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_ctr-button > .toolbarbutton-icon,
+#customization-panelHolder #ctraddon_ctr-button > .toolbarbutton-icon,
+#customization-palette #ctraddon_ctr-button > .toolbarbutton-icon {
+  /* His icon source image size is different from ours, and we have no replacement icon
+   * for this, so we need to rescale his.
+   */
+  height: 24px !important;
+  width: 24px !important;
+}
 
 
