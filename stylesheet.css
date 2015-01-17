@@ -1,6 +1,108 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url(http://www.w3.org/1999/xhtml);
 
 /* Starting with an empty stylesheet.
  * New rules go here.
  */
+
+/* ::::: CTR-Defined Primary Toolbarbuttons in General ::::: */
+
+#navigator-toolbox > toolbar .toolbarbutton-1[id^="ctraddon_"]:not([type]) .toolbarbutton-icon {
+  /* He uses padding suitable for the default theme; we reassert our padding. */
+  padding: 0 !important;
+}
+
+/* ::::: CTR-Defined Combined Back and Forward Toolbarbuttons ::::: */
+
+#ctraddon_back-button  > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
+  -moz-image-region: rect(0, 48px, 16px, 32px) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#ctraddon_back-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(16px, 48px, 32px, 32px) !important;
+}
+
+#main-window:not([customizing]) #ctraddon_back-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(32px, 48px, 48px, 32px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button > .toolbarbutton-icon,
+#customization-panelHolder #ctraddon_back-button > .toolbarbutton-icon,
+#customization-palette #ctraddon_back-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
+  -moz-image-region: rect(0, 72px, 24px, 48px) !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(24px, 72px, 48px, 48px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(48px, 72px, 72px, 48px) !important;
+}
+
+#ctraddon_forward-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
+  -moz-image-region: rect(0, 64px, 16px, 48px) !important;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+#ctraddon_forward-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(16px, 64px, 32px, 48px) !important;
+}
+
+#main-window:not([customizing]) #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(32px, 64px, 48px, 48px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button > .toolbarbutton-icon,
+#customization-panelHolder #ctraddon_forward-button > .toolbarbutton-icon,
+#customization-palette #ctraddon_forward-button > .toolbarbutton-icon {
+  list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
+  -moz-image-region: rect(0, 96px, 24px, 72px) !important;
+  height: 24px !important;
+  width: 24px !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button:hover > .toolbarbutton-icon {
+  -moz-image-region: rect(24px, 96px, 48px, 72px) !important;
+}
+
+#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
+#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
+#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
+  -moz-image-region: rect(48px, 96px, 72px, 72px) !important;
+}
+
+#ctraddon_back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
+#ctraddon_forward-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+  transform: scaleX(-1) !important;
+}
+
+/* On the palette, the actual back and forward toolbarbutton elements are hidden by CTR,
+ * and their container is used to show the icons, as background image.
+ */
+#customization-palette #ctraddon_back-forward-button {
+  background-image: -moz-image-rect(url(chrome://browser/skin/Toolbar-australis.png), 0, 96, 24, 48) !important;
+}
+
