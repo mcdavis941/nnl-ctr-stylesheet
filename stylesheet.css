@@ -222,4 +222,54 @@
   width: 24px !important;
 }
 
+/* ::::: CTR Buttons at the Bottom of the Customization Palette ::::: */
+
+#ctraddon_cuibuttonsbox {
+  margin-top: -10px !important;
+  background-color: #070707 !important;
+  padding-bottom: 5px !important;
+}
+
+/* These are labels, intended to look like labels, but have class .customizationmode-button
+ * and so receive button styling.  We remove button styling so they look like simple labels.
+ */
+#ctraddon_cuibuttonsbox .ctraddon_cuibutlabel.customizationmode-button .button-box {
+  background: none !important;
+}
+
+/* Reassert our standard toolkit button styling. There's more to do here. */
+#customization-palette-container #ctraddon_cuibuttonsbox[id] :-moz-any(#ctraddon_cui-icons-button, #ctraddon_cui-iconstext-button, #ctraddon_cui-textonly-button) {
+  -moz-margin-start: 0 !important;
+  -moz-margin-end: 0 !important;
+  padding-left: 1px !important;
+  border: 1px solid black !important;
+  border-top: 2px solid black !important;
+  -moz-border-top-colors: black #393939 !important;
+  -moz-border-right-colors: none !important;
+  -moz-border-bottom-colors: none !important;
+  -moz-border-left-colors: none !important;
+  background: url("chrome://global/skin/button/outer-gradient-bg.png") top left repeat-x #070707 !important;
+}
+
+/* ::::: CTR Appbutton Toolbarbutton ::::: */
+
+#ctraddon_appbutton {
+  /* TODO */
+}
+
+/* ::::: Identity Block with CTR ::::: */
+
+/* He sets padding on #identity-box; we reassert ours.
+ * His rule has selector:
+ *
+ *     #main-window:not([defaultfxtheme="true"]) #notification-popup-box[hidden] + * { ... }
+ *
+ * which has specificity 220, and we must exceed that.
+ *
+ */
+#urlbar-container > #urlbar-wrapper > #urlbar #identity-box {
+  padding: 0 5px !important;
+}
+
+
 
