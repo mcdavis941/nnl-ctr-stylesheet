@@ -2,12 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this file,
  * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
+/* ::::: Instruction to Stylish ::::: */
+
+/* It looks like a comment but it's actually an instruction.
+ * See https://github.com/JasonBarnabe/stylish/wiki/Overwriting-page-styles
+ */
+
+/* AGENT_SHEET */
+
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 @namespace html url(http://www.w3.org/1999/xhtml);
-
-/* Starting with an empty stylesheet.
- * New rules go here.
- */
 
 /* ::::: CTR-Defined Primary Toolbarbuttons in General ::::: */
 
