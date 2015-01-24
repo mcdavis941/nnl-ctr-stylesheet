@@ -15,188 +15,188 @@
 
 /* ::::: CTR-Defined Primary Toolbarbuttons in General ::::: */
 
-#navigator-toolbox > toolbar .toolbarbutton-1[id^="ctraddon_"]:not([type]) .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #navigator-toolbox > toolbar .toolbarbutton-1[id^="ctraddon_"]:not([type]) .toolbarbutton-icon {
   /* He uses padding suitable for the default theme; we reassert our padding. */
   padding: 0 !important;
 }
 
 /* ::::: CTR-Defined Combined Back and Forward Toolbarbuttons ::::: */
 
-#ctraddon_back-button  > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_back-button  > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
   -moz-image-region: rect(0, 48px, 16px, 32px) !important;
   height: 16px !important;
   width: 16px !important;
 }
 
-#ctraddon_back-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_back-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(16px, 48px, 32px, 32px) !important;
 }
 
-#main-window:not([customizing]) #ctraddon_back-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing]) #ctraddon_back-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(32px, 48px, 48px, 32px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button > .toolbarbutton-icon,
-#customization-panelHolder #ctraddon_back-button > .toolbarbutton-icon,
-#customization-palette #ctraddon_back-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_back-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-panelHolder #ctraddon_back-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_back-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
   -moz-image-region: rect(0, 72px, 24px, 48px) !important;
   height: 24px !important;
   width: 24px !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_back-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(24px, 72px, 48px, 48px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_back-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_back-button[disabled] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_back-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(48px, 72px, 72px, 48px) !important;
 }
 
-#ctraddon_forward-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_forward-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
   -moz-image-region: rect(0, 64px, 16px, 48px) !important;
   height: 16px !important;
   width: 16px !important;
 }
 
-#ctraddon_forward-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_forward-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(16px, 64px, 32px, 48px) !important;
 }
 
-#main-window:not([customizing]) #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing]) #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(32px, 64px, 48px, 48px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button > .toolbarbutton-icon,
-#customization-panelHolder #ctraddon_forward-button > .toolbarbutton-icon,
-#customization-palette #ctraddon_forward-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-panelHolder #ctraddon_forward-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_forward-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
   -moz-image-region: rect(0, 96px, 24px, 72px) !important;
   height: 24px !important;
   width: 24px !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(24px, 96px, 48px, 72px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_forward-button[disabled] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents #ctraddon_forward-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(48px, 96px, 72px, 72px) !important;
 }
 
-#ctraddon_back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
-#ctraddon_forward-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_back-button:-moz-locale-dir(rtl) > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_forward-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
   transform: scaleX(-1) !important;
 }
 
 /* On the palette, the actual back and forward toolbarbutton elements are hidden by CTR,
  * and their container is used to show the icons, as background image.
  */
-#customization-palette #ctraddon_back-forward-button {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_back-forward-button {
   background-image: -moz-image-rect(url(chrome://browser/skin/Toolbar-australis.png), 0, 96, 24, 48) !important;
 }
 
 /* ::::: CTR-Defined Reload Toolbarbutton ::::: */
 
-#ctraddon_reload-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_reload-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
   -moz-image-region: rect(0, 80px, 16px, 64px) !important;
   height: 16px !important;
   width: 16px !important;
 }
 
-#ctraddon_reload-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_reload-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(16px, 80px, 32px, 64px) !important;
 }
 
-#main-window:not([customizing]) #ctraddon_reload-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing]) #ctraddon_reload-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(32px, 80px, 48px, 64px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button > .toolbarbutton-icon,
-#customization-panelHolder #ctraddon_reload-button > .toolbarbutton-icon,
-#customization-palette #ctraddon_reload-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-panelHolder #ctraddon_reload-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_reload-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
   -moz-image-region: rect(0, 120px, 24px, 96px) !important;
   height: 24px !important;
   width: 24px !important;
 }
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(24px, 120px, 48px, 96px) !important;
 }
-#main-window:not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_reload-button[disabled="true"] > .toolbarbutton-icon {
   -moz-image-region: rect(48px, 120px, 72px, 96px) !important;
 }
 
-#ctraddon_reload-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_reload-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
   transform: scaleX(-1) !important;
 }
 
 /* ::::: CTR-Defined Stop Toolbarbutton ::::: */
 
-#ctraddon_stop-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_stop-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis-small.png) !important;
   -moz-image-region: rect(0, 96px, 16px, 80px) !important;
   height: 16px !important;
   width: 16px !important;
 }
 
-#ctraddon_stop-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_stop-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(16px, 96px, 32px, 80px) !important;
 }
 
-#main-window:not([customizing]) #ctraddon_stop-button[disabled] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing]) #ctraddon_stop-button[disabled] > .toolbarbutton-icon {
   -moz-image-region: rect(32px, 96px, 48px, 80px) !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button > .toolbarbutton-icon,
-#customization-panelHolder #ctraddon_stop-button > .toolbarbutton-icon,
-#customization-palette #ctraddon_stop-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-panelHolder #ctraddon_stop-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_stop-button > .toolbarbutton-icon {
   list-style-image: url(chrome://browser/skin/Toolbar-australis.png) !important;
   -moz-image-region: rect(0, 144px, 24px, 120px) !important;
   height: 24px !important;
   width: 24px !important;
 }
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button:hover > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button:hover > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button:hover > .toolbarbutton-icon {
   -moz-image-region: rect(24px, 144px, 48px, 120px) !important;
 }
-#main-window:not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_stop-button[disabled="true"] > .toolbarbutton-icon {
   -moz-image-region: rect(48px, 144px, 72px, 120px) !important;
 }
 
-#ctraddon_stop-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_stop-button:-moz-locale-dir(rtl) > .toolbarbutton-icon {
   transform: scaleX(-1) !important;
 }
 
 /* ::::: PanelUI Toolbarbutton ::::: */
 
-#nav-bar #ctraddon_panelui-button > #PanelUI-menu-button {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar #ctraddon_panelui-button > #PanelUI-menu-button {
   /* His CSS sets margin-top and -bottom to zero, so we reassert our margins. */
   margin-top: 5px !important;
   margin-bottom: 5px !important;
@@ -204,17 +204,17 @@
 
 /* ::::: CTR Options Toolbarbutton ::::: */
 
-#ctraddon_ctr-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_ctr-button > .toolbarbutton-icon {
   /* His icon size is 18x18, and we have no replacement icon for this, so we need to rescale his. */
   height: 16px !important;
   width: 16px !important;
 }
 
-#nav-bar[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
-#widget-overflow[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
-#main-window:not([customizing="true"]) #PanelUI-contents > #ctraddon_ctr-button > .toolbarbutton-icon,
-#customization-panelHolder #ctraddon_ctr-button > .toolbarbutton-icon,
-#customization-palette #ctraddon_ctr-button > .toolbarbutton-icon {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #nav-bar[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #widget-overflow[nightlaunch-iconsize="large"] #ctraddon_ctr-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]):not([customizing="true"]) #PanelUI-contents > #ctraddon_ctr-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-panelHolder #ctraddon_ctr-button > .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette #ctraddon_ctr-button > .toolbarbutton-icon {
   /* His icon source image size is different from ours, and we have no replacement icon
    * for this, so we need to rescale his.
    */
@@ -224,7 +224,7 @@
 
 /* ::::: CTR Buttons at the Bottom of the Customization Palette ::::: */
 
-#ctraddon_cuibuttonsbox {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_cuibuttonsbox {
   margin-top: -10px !important;
   background-color: #070707 !important;
   padding-bottom: 5px !important;
@@ -233,12 +233,12 @@
 /* These are labels, intended to look like labels, but have class .customizationmode-button
  * and so receive button styling.  We remove button styling so they look like simple labels.
  */
-#ctraddon_cuibuttonsbox .ctraddon_cuibutlabel.customizationmode-button .button-box {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_cuibuttonsbox .ctraddon_cuibutlabel.customizationmode-button .button-box {
   background: none !important;
 }
 
 /* Reassert our standard toolkit button styling. There's more to do here. */
-#customization-palette-container #ctraddon_cuibuttonsbox[id] :-moz-any(#ctraddon_cui-icons-button, #ctraddon_cui-iconstext-button, #ctraddon_cui-textonly-button) {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #customization-palette-container #ctraddon_cuibuttonsbox[id] :-moz-any(#ctraddon_cui-icons-button, #ctraddon_cui-iconstext-button, #ctraddon_cui-textonly-button) {
   -moz-margin-start: 0 !important;
   -moz-margin-end: 0 !important;
   padding-left: 1px !important;
@@ -253,7 +253,7 @@
 
 /* ::::: CTR Appbutton Toolbarbutton ::::: */
 
-#ctraddon_appbutton {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_appbutton {
   /* TODO */
 }
 
@@ -267,7 +267,7 @@
  * which has specificity 220, and we must exceed that.
  *
  */
-#urlbar-container > #urlbar-wrapper > #urlbar #identity-box {
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #urlbar-container > #urlbar-wrapper > #urlbar #identity-box {
   padding: 0 5px !important;
 }
 
