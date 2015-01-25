@@ -110,6 +110,21 @@
   background-image: -moz-image-rect(url(chrome://browser/skin/Toolbar-australis.png), 0, 96, 24, 48) !important;
 }
 
+/* In the panelUI popup and in the synthetic popup during customization, not having [wrap="true"], unlike most other toolbarbuttons,
+ * multiline text is hidden and regular .toolbarbutton-text is shown, causing text to not line up with other toolbarbuttons because
+ * regular .toolbarbutton-text is taller.  To fix this, we hide .toolbarbutton-text and reveal .toolbarbutton-multiline-text.
+ */
+
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #PanelUI-contents #ctraddon_back-button .toolbarbutton-text,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #PanelUI-contents #ctraddon_forward-button .toolbarbutton-text {
+  display: none !important;
+}
+
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #PanelUI-contents #ctraddon_back-button .toolbarbutton-multiline-text,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #PanelUI-contents #ctraddon_forward-button .toolbarbutton-multiline-text {
+  display: block !important;
+}
+
 /* ::::: CTR-Defined Reload Toolbarbutton ::::: */
 
 #main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #ctraddon_reload-button > .toolbarbutton-icon {
