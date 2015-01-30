@@ -286,5 +286,22 @@
   padding: 0 5px !important;
 }
 
+/* ::::: Certain Badged Toolbarbuttons ::::: */
+
+/* CTR sets a wider min-width than we want, so we reassert ours.
+ * Note, the PanelUI button isn't badged unless Firefox is showing an update status badge,
+ * enabled when pref app.update.badge=true, defaulting false in Firefox 35 and true in
+ * Firefox 37 and up.
+ */
+
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #loop-button .toolbarbutton-badge-container .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #loop-call-button .toolbarbutton-badge-container .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #loop-button-throttled .toolbarbutton-badge-container .toolbarbutton-icon,
+#main-window:-moz-any([currenttheme="nightlaunchnext"], [currenttheme="nasanightlaunch"]) #PanelUI-menu-button .toolbarbutton-badge-container .toolbarbutton-icon {
+  min-width: unset !important;
+}
+
+
+
 
 
